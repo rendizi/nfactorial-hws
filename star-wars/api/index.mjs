@@ -53,7 +53,7 @@ app.post('/starships', postStarships)
 app.get('/starships', findStarships)
 
 app.get('/', (req, res) => {
-  res.send({mongoDBUrl, port})
+  res.send({message:"server is alive"})
 })
 
 app.listen(port, () => {
