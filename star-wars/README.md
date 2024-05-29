@@ -7,6 +7,8 @@ docker-compose build
 docker-compose up
 ```
 
+Also add mongo db uri to /api/.env
+
 Whole project will run after this. 
 
 API is simple, jus post new data and get. Endpoints:
@@ -76,4 +78,3 @@ The same as prev
 
 It is running on port 4000. If I will deploy it, then on api.sw.baglanov.site
 
-Also add mongo db uri to /api/.env
