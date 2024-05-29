@@ -3,7 +3,7 @@ import { starships } from "../../index.mjs";
 export const postStarships = async (req,res) => {
     const requiredFields = [
         'model', 'starship_class', 'manufacturer', 'cost_in_credits', 'length', 
-        'crew', 'passengers', 'max_atmosphering_speed', 'hyperdrive_rating',
+        'crew', 'max_atmosphering_speed', 'hyperdrive_rating',
         'MGLT','cargo_capacity','consumables','name'
     ];
 

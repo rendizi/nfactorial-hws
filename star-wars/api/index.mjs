@@ -1,6 +1,7 @@
 import express from "express"
 import dotenv from "dotenv"
 import { MongoClient } from "mongodb";
+import cors from "cors"
 
 //Routes
 import { postCharacters } from "./routes/characters/post.mjs";
@@ -37,6 +38,7 @@ await connectToMongoDB()
 
 const app = express()
 app.use(express.json())
+app.use(cors())
 
 const port = process.env.PORT 
 if (port===undefined){
